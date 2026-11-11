@@ -1,0 +1,4 @@
+dispositif,montant_min_eur,montant_max_eur,conditions,source,grade_fiabilite
+Bourse French Tech (Bpifrance),30000,50000,"70% des dépenses éligibles, société <1 an, plafond discordant selon sources",https://hayot-expertise.fr/blog/bourse-french-tech-bpifrance-conditions,B
+Bourse French Tech Émergence (deeptech),45000,90000,nécessite un organisme de transfert techno,https://subventions.fr/insights/bourse-french-tech-guide/,C
+French Tech Tremplin (incubation),22900,22900,"fixe, 12 mois d'accompagnement obligatoire, appel jan-mars 2026",https://subventions.fr/insights/french-tech-tremplin-guide/,C

@@ -1,0 +1,9 @@
+population,percentile,valeur,unite,source,grade_fiabilite
+Micro-entrepreneur FR (INSEE 2024),P25,80,€/mois net,https://www.inegalites.fr/Independants-le-grand-ecart-des-revenus,A
+Micro-entrepreneur FR (INSEE 2024),P50,330,€/mois net,https://www.inegalites.fr/Independants-le-grand-ecart-des-revenus,A
+Micro-entrepreneur FR (INSEE 2024),P90,1790,€/mois net,https://www.inegalites.fr/Independants-le-grand-ecart-des-revenus,A
+"Micro-entrepreneur FR, CA moyen (Urssaf 2025)",moyenne,1691,€/mois brut (5 072 €/trim.),https://www.moneyvox.fr/banque-pro/actualites/109200/salaries-ou-independants-qui-gagne-vraiment-le-plus,B
+"Indie hacker, produits vérifiés avec revenu (n=4 987)",P50,155,€/mois (169 $),https://solooperatorstack.com/blog/indie-hacker-revenue-distribution-tam-clarity/,C
+"Indie hacker, sondage communauté",P50,900,€/mois (<1k$),https://www.betterlaunch.co/blog/indie-hacker,C
+"Indie hacker, sondage communauté",P90,9200,€/mois (10k$+ MRR),https://www.betterlaunch.co/blog/indie-hacker,C
+"Indie hacker, auto-déclaré public (n=65, biais fort)",P50,13800,€/mois (15k$),https://provenstartups.com/blog/solo-founders/indie-hacker-revenue,C

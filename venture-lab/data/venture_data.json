@@ -1,0 +1,1862 @@
+{
+ "meta": {
+  "date": "2026-11-11",
+  "grades": {
+   "A": "source primaire",
+   "B": "presse/analyse reprenant une primaire",
+   "C": "blog/agrégateur, à vérifier",
+   "E": "estimation de l'auteur, à challenger"
+  },
+  "avertissement": "Les colonnes suffixées _j sont des jugements, pas des mesures.",
+  "sources_primaires_lues": [
+   "CB Insights liste publique (page HTML, 11/11/2026)",
+   "PitchBook Q1 2026 Global Unicorn Tracker (PDF, 5 mai 2026)",
+   "Acquire.com Multiples Report 2025 (PDF)",
+   "Stripe blog, top solo founder traits (2026)",
+   "beehiiv State of Paid Newsletters 2026",
+   "Y Combinator RFS Winter 2027"
+  ],
+  "sources_bloquees": [
+   "carta.com (403 anti-bot) : chiffres Carta repris via extraits de recherche, grade conservé A car pages carta.com"
+  ]
+ },
+ "taux_de_base": [
+  {
+   "indicateur": "startups VC-backed devenant licorne",
+   "valeur": 1.0,
+   "unite": "%",
+   "note": "<1% (TechCrunch 2023, dataset Unicorn Club)",
+   "source": "https://techcrunch.com/2024/01/18/welcome-back-to-the-unicorn-club-10-years-later/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "startup seed devenant licorne (AngelList)",
+   "valeur": 2.5,
+   "unite": "%",
+   "note": "~1 sur 40",
+   "source": "https://www.angellist.com/blog/angellist-unicorn-rate",
+   "grade": "A"
+  },
+  {
+   "indicateur": "startup seed devenant licorne (Strebulaev/Stanford)",
+   "valeur": 0.5,
+   "unite": "%",
+   "note": "",
+   "source": "https://samhuleatt.com/base-rates-venture-capital/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "startup seed devenant licorne (CB Insights)",
+   "valeur": 1.28,
+   "unite": "%",
+   "note": "",
+   "source": "https://samhuleatt.com/base-rates-venture-capital/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "startup YC devenant licorne (batches matures)",
+   "valeur": 4.5,
+   "unite": "%",
+   "note": "analyse 4 939 sociétés, Lenny's Newsletter",
+   "source": "https://www.zeni.ai/blog/y-combinator-success-rate",
+   "grade": "B"
+  },
+  {
+   "indicateur": "startups VC-backed ne rendant jamais le cash aux investisseurs",
+   "valeur": 75,
+   "unite": "%",
+   "note": "HBS, Shikhar Ghosh",
+   "source": "https://resources.review42.com/what-percentage-of-startups-fail/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "startups VC-backed où l'investisseur perd 100%",
+   "valeur": 35,
+   "unite": "%",
+   "note": "30-40%, HBS",
+   "source": "https://resources.review42.com/what-percentage-of-startups-fail/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "micro-entrepreneurs FR encore actifs 5 ans après création",
+   "valeur": 28,
+   "unite": "%",
+   "note": "INSEE",
+   "source": "https://www.journaldunet.com/business/1552731-selon-l-insee-seulement-28-des-micro-entrepreneurs-immatricules-sont-encore-actifs-cinq-ans-apres-leur-creation/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "produits indie hackers vérifiés avec revenu >0 sur 30 jours",
+   "valeur": 49.1,
+   "unite": "%",
+   "note": "données TrustMRR-style, 4 987 produits",
+   "source": "https://solooperatorstack.com/blog/indie-hacker-revenue-distribution-tam-clarity/",
+   "grade": "C"
+  },
+  {
+   "indicateur": "SaaS indépendants sous 1 000 $ MRR (MicroConf 2024, n=469)",
+   "valeur": 28,
+   "unite": "%",
+   "note": "plus grande tranche du sondage",
+   "source": "https://microconf.com/founders/0-10k-arr",
+   "grade": "A"
+  },
+  {
+   "indicateur": "startups Atlas facturant un 1er client sous 30 jours (2025)",
+   "valeur": 20,
+   "unite": "%",
+   "note": "vs 8% en 2020",
+   "source": "https://stripe.com/au/newsroom/news/stripe-2025-update",
+   "grade": "A"
+  },
+  {
+   "indicateur": "projets IA agentique à risque d'annulation d'ici 2027 (Gartner)",
+   "valeur": 40,
+   "unite": "%",
+   "note": ">40%",
+   "source": "https://www.raftlabs.com/blog/ai-agents-statistics",
+   "grade": "C"
+  }
+ ],
+ "entonnoir": [
+  {
+   "etape": "Création d'entreprise (toutes)",
+   "n": 1000000,
+   "note": "base de référence (1 000 000)",
+   "source": "convention",
+   "grade": "-"
+  },
+  {
+   "etape": "Lève un seed VC",
+   "n": 10000,
+   "note": "~1% des créations (ordre de grandeur, estimation)",
+   "source": "estimation",
+   "grade": "E"
+  },
+  {
+   "etape": "Atteint Series A",
+   "n": 3500,
+   "note": "~35% des seed (ordre de grandeur Carta/PitchBook couramment cité)",
+   "source": "estimation",
+   "grade": "E"
+  },
+  {
+   "etape": "Devient licorne",
+   "n": 100,
+   "note": "~1% des VC-backed, 0,5-2,5% des seed",
+   "source": "https://www.angellist.com/blog/angellist-unicorn-rate",
+   "grade": "B"
+  }
+ ],
+ "trackers": [
+  {
+   "tracker": "CB Insights",
+   "n": 1447,
+   "val_mds": 7376,
+   "date": "2026-11",
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "tracker": "PitchBook",
+   "n": 1590,
+   "val_mds": null,
+   "date": "2026-02-02",
+   "source": "https://www.unicorn-club.com/guides/how-many-unicorns-are-there/",
+   "grade": "B"
+  },
+  {
+   "tracker": "Crunchbase Unicorn Board",
+   "n": 1881,
+   "val_mds": 9200,
+   "date": "2026-09-22",
+   "source": "https://www.unicorn-club.com/guides/how-many-unicorns-are-there/",
+   "grade": "B"
+  },
+  {
+   "tracker": "Crunchbase (autre article)",
+   "n": 1919,
+   "val_mds": null,
+   "date": "2026-11-03",
+   "source": "https://blog.mean.ceo/unicorn-startups-news-november-2026/",
+   "grade": "C"
+  },
+  {
+   "tracker": "Dealroom (unicorn-tier, inclut sorties)",
+   "n": 3977,
+   "val_mds": null,
+   "date": "2026-09",
+   "source": "https://www.unicorn-club.com/guides/how-many-unicorns-are-there/",
+   "grade": "B"
+  },
+  {
+   "tracker": "PitchBook Q1 tracker (primaire)",
+   "n": 1680,
+   "val_mds": 8600,
+   "date": "2026-03-31",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "tracker": "CB Insights, lignes parsées de la liste publique",
+   "n": 1316,
+   "val_mds": 7016,
+   "date": "2026-11-11",
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  }
+ ],
+ "pays": [
+  {
+   "pays": "États-Unis",
+   "min": 806,
+   "max": 971,
+   "retenu": 806,
+   "source": "https://www.secondtalent.com/resources/countries-with-most-unicorns/",
+   "grade": "B"
+  },
+  {
+   "pays": "Chine",
+   "min": 166,
+   "max": 381,
+   "retenu": 166,
+   "source": "https://www.secondtalent.com/resources/countries-with-most-unicorns/",
+   "grade": "B"
+  },
+  {
+   "pays": "Inde",
+   "min": 60,
+   "max": 131,
+   "retenu": 67,
+   "source": "https://www.secondtalent.com/resources/countries-with-most-unicorns/",
+   "grade": "B"
+  },
+  {
+   "pays": "Royaume-Uni",
+   "min": 57,
+   "max": 94,
+   "retenu": 80,
+   "source": "https://www.wipo.int/ru/web/global-innovation-index/w/blogs/2026/global-unicorn-valuation-2025",
+   "grade": "B"
+  },
+  {
+   "pays": "Allemagne",
+   "min": 29,
+   "max": 47,
+   "retenu": 37,
+   "source": "https://www.wipo.int/ru/web/global-innovation-index/w/blogs/2026/global-unicorn-valuation-2025",
+   "grade": "B"
+  },
+  {
+   "pays": "France",
+   "min": 23,
+   "max": 39,
+   "retenu": 30,
+   "source": "https://www.maddyness.com/2026/03/09/non-la-french-tech-ne-compte-plus-une-trentaine-de-licornes/",
+   "grade": "B"
+  }
+ ],
+ "temps_licorne": [
+  {
+   "cohorte": "Toutes licornes (historique, n=1 336)",
+   "annees": 7.0,
+   "note": "CB Insights",
+   "source": "https://valueaddvc.com/blog/how-long-does-it-take-a-startup-to-become-a-unicorn-the-data-from-1336-companies",
+   "grade": "B"
+  },
+  {
+   "cohorte": "Non-IA, 2026",
+   "annees": 7.2,
+   "note": ">7 ans, PitchBook",
+   "source": "https://techfundingnews.com/ai-unicorns-in-4-7-years-is-vc-model-broken/",
+   "grade": "B"
+  },
+  {
+   "cohorte": "IA, 2026 (CB Insights)",
+   "annees": 3.4,
+   "note": "",
+   "source": "https://www.cbinsights.com/research/newsletter-october-22-2026/",
+   "grade": "A"
+  },
+  {
+   "cohorte": "IA, 2026 (PitchBook)",
+   "annees": 3.2,
+   "note": "",
+   "source": "https://techfundingnews.com/ai-unicorns-in-4-7-years-is-vc-model-broken/",
+   "grade": "B"
+  },
+  {
+   "cohorte": "Chine H1 2026 (ITjuzi)",
+   "annees": 3.7,
+   "note": "moyenne 4,7",
+   "source": "https://we0.ai/articles/china-s-67-new-unicorns-in",
+   "grade": "C"
+  }
+ ],
+ "part_ia": [
+  {
+   "annee": 2024,
+   "part": 52,
+   "def": "CB Insights",
+   "source": "https://aifundingtracker.com/ai-unicorn-statistics/",
+   "grade": "B"
+  },
+  {
+   "annee": 2025,
+   "part": 61,
+   "def": "CB Insights (75 sociétés)",
+   "source": "https://aifundingtracker.com/ai-unicorn-statistics/",
+   "grade": "B"
+  },
+  {
+   "annee": 2025,
+   "part": 25,
+   "def": "Crunchbase, définition 'AI-native' stricte (47/187)",
+   "source": "https://aifundingtracker.com/ai-unicorn-statistics/",
+   "grade": "B"
+  }
+ ],
+ "rpe": [
+  {
+   "societe": "Lovable",
+   "arr": 100,
+   "mois": 8,
+   "effectif": 45,
+   "note": "100M$ ARR en ~8 mois; 45 ETP à ce moment (chiffres divergents: 146 employés plus tard)",
+   "source": "https://alatirok.com/fastest-to-100m-arr/",
+   "grade": "C"
+  },
+  {
+   "societe": "ElevenLabs",
+   "arr": 100,
+   "mois": 12,
+   "effectif": 50,
+   "note": "",
+   "source": "https://alatirok.com/fastest-to-100m-arr/",
+   "grade": "C"
+  },
+  {
+   "societe": "Gamma",
+   "arr": 100,
+   "mois": null,
+   "effectif": 50,
+   "note": "~2M$/employé",
+   "source": "https://newmarketpitch.com/blogs/news/ai-infrastructure-fastest-100m-arr",
+   "grade": "C"
+  },
+  {
+   "societe": "Cursor",
+   "arr": 100,
+   "mois": 12,
+   "effectif": null,
+   "note": "12 à 20 mois selon les sources",
+   "source": "https://clinkbill.com/arr-leaderboard",
+   "grade": "C"
+  },
+  {
+   "societe": "Mercor",
+   "arr": 100,
+   "mois": 11,
+   "effectif": null,
+   "note": "",
+   "source": "https://clinkbill.com/arr-leaderboard",
+   "grade": "C"
+  },
+  {
+   "societe": "Midjourney",
+   "arr": 200,
+   "mois": null,
+   "effectif": 40,
+   "note": "200M$ ARR; effectif 10 à 60 selon source (10 = peu fiable); zéro VC",
+   "source": "https://ai2.work/blog/the-sub-100-employee-unicorn-how-agentic-ai-is-breaking-the-headcount-revenue-eq",
+   "grade": "C"
+  },
+  {
+   "societe": "SaaS privé médian (référence)",
+   "arr": 0.141,
+   "mois": null,
+   "effectif": 1,
+   "note": "141k$/employé",
+   "source": "https://ai2.work/blog/the-sub-100-employee-unicorn-how-agentic-ai-is-breaking-the-headcount-revenue-eq",
+   "grade": "C"
+  }
+ ],
+ "solo": [
+  {
+   "indicateur": "Part des nouvelles startups US avec fondateur unique",
+   "annee": 2019,
+   "valeur": 23.7,
+   "unite": "%",
+   "note": "Carta",
+   "source": "https://carta.com/data/solo-founders-report/",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part des nouvelles startups US avec fondateur unique",
+   "annee": 2024,
+   "valeur": 31,
+   "unite": "%",
+   "note": "Carta",
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part des nouvelles startups US avec fondateur unique",
+   "annee": 2025,
+   "valeur": 36.3,
+   "unite": "%",
+   "note": "Carta H1 2025",
+   "source": "https://carta.com/data/solo-founders-report/",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part des C-corps Atlas fondées en solo",
+   "annee": 2026,
+   "valeur": 63,
+   "unite": "%",
+   "note": "Stripe Atlas Q2 2026 (via presse)",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "B"
+  },
+  {
+   "indicateur": "Part du cash levé en tours priced captée par les solos",
+   "annee": 2024,
+   "valeur": 14.7,
+   "unite": "%",
+   "note": "pour ~30% des startups",
+   "source": "https://carta.com/data/solo-founders-report/",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Délai médian avant 1er salarié, solo",
+   "annee": 2025,
+   "valeur": 399,
+   "unite": "jours",
+   "note": "vs 480 multi-fondateurs",
+   "source": "https://carta.com/data/solo-founders-report/",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Ownership médian à la sortie, solo vs lead multi",
+   "annee": 2025,
+   "valeur": 75,
+   "unite": "% de plus",
+   "note": "",
+   "source": "https://carta.com/data/solo-founders-report/",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Revenu 6 premiers mois, médiane solo, variation YoY",
+   "annee": 2025,
+   "valeur": -23,
+   "unite": "%",
+   "note": "Stripe Atlas",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Revenu 6 premiers mois, top décile solo, variation YoY",
+   "annee": 2025,
+   "valeur": 19,
+   "unite": "%",
+   "note": "Stripe Atlas",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Ratio revenu top décile / médiane, solo",
+   "annee": 2021,
+   "valeur": 34,
+   "unite": "x",
+   "note": "Stripe Atlas",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Ratio revenu top décile / médiane, solo",
+   "annee": 2025,
+   "valeur": 61,
+   "unite": "x",
+   "note": "Stripe Atlas",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part du revenu à l'international, top décile solo",
+   "annee": 2025,
+   "valeur": 51,
+   "unite": "%",
+   "note": "vs 2% médiane",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Pays non-US adressés à 24 mois, top décile solo",
+   "annee": 2025,
+   "valeur": 40,
+   "unite": "pays",
+   "note": "vs 6 médiane",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Revenu top décile multi-fondateurs vs top décile solo à 24 mois",
+   "annee": 2025,
+   "valeur": 53,
+   "unite": "% de plus",
+   "note": "Stripe Atlas",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part des C-corps Atlas fondées en solo, Q2 2026",
+   "annee": 2026,
+   "valeur": 63,
+   "unite": "%",
+   "note": "record",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Revenu médian solo B2B vs solo B2C à 24 mois",
+   "annee": 2025,
+   "valeur": 4,
+   "unite": "x",
+   "note": "",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Rétention clients mois suivant, top décile vs décile médian",
+   "annee": 2025,
+   "valeur": 30,
+   "unite": "% vs 8%",
+   "note": "",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Rétention 1ers clients B2B, top décile vs médiane",
+   "annee": 2025,
+   "valeur": 6,
+   "unite": "x",
+   "note": "",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Top décile 30% plus susceptibles de faire du B2B",
+   "annee": 2025,
+   "valeur": 30,
+   "unite": "%",
+   "note": "",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Top décile B2B : +26 pts d'usage du billing récurrent",
+   "annee": 2025,
+   "valeur": 26,
+   "unite": "pts",
+   "note": "B2C +20",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Écart revenu à 2 ans, bootstrappé solo vs multi, 99e percentile",
+   "annee": 2025,
+   "valeur": 5,
+   "unite": "%",
+   "note": "",
+   "source": "https://stripe.com/blog/top-solo-founder-traits",
+   "grade": "A"
+  }
+ ],
+ "dilution": [
+  {
+   "etape": "Création",
+   "pct": 100,
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  },
+  {
+   "etape": "Après seed",
+   "pct": 56.2,
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  },
+  {
+   "etape": "Après Series A",
+   "pct": 36,
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  },
+  {
+   "etape": "Après Series B (IA)",
+   "pct": 27.3,
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  },
+  {
+   "etape": "Après Series B (non-IA)",
+   "pct": 21.8,
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  },
+  {
+   "etape": "Après Series C",
+   "pct": 16.1,
+   "source": "https://carta.com/data/founder-ownership-2026/",
+   "grade": "A"
+  }
+ ],
+ "revenus": [
+  {
+   "pop": "Micro-entrepreneur FR (INSEE 2024)",
+   "pct": "P25",
+   "valeur": 80,
+   "unite": "€/mois net",
+   "source": "https://www.inegalites.fr/Independants-le-grand-ecart-des-revenus",
+   "grade": "A"
+  },
+  {
+   "pop": "Micro-entrepreneur FR (INSEE 2024)",
+   "pct": "P50",
+   "valeur": 330,
+   "unite": "€/mois net",
+   "source": "https://www.inegalites.fr/Independants-le-grand-ecart-des-revenus",
+   "grade": "A"
+  },
+  {
+   "pop": "Micro-entrepreneur FR (INSEE 2024)",
+   "pct": "P90",
+   "valeur": 1790,
+   "unite": "€/mois net",
+   "source": "https://www.inegalites.fr/Independants-le-grand-ecart-des-revenus",
+   "grade": "A"
+  },
+  {
+   "pop": "Micro-entrepreneur FR, CA moyen (Urssaf 2025)",
+   "pct": "moyenne",
+   "valeur": 1691,
+   "unite": "€/mois brut (5 072 €/trim.)",
+   "source": "https://www.moneyvox.fr/banque-pro/actualites/109200/salaries-ou-independants-qui-gagne-vraiment-le-plus",
+   "grade": "B"
+  },
+  {
+   "pop": "Indie hacker, produits vérifiés avec revenu (n=4 987)",
+   "pct": "P50",
+   "valeur": 155,
+   "unite": "€/mois (169 $)",
+   "source": "https://solooperatorstack.com/blog/indie-hacker-revenue-distribution-tam-clarity/",
+   "grade": "C"
+  },
+  {
+   "pop": "Indie hacker, sondage communauté",
+   "pct": "P50",
+   "valeur": 900,
+   "unite": "€/mois (<1k$)",
+   "source": "https://www.betterlaunch.co/blog/indie-hacker",
+   "grade": "C"
+  },
+  {
+   "pop": "Indie hacker, sondage communauté",
+   "pct": "P90",
+   "valeur": 9200,
+   "unite": "€/mois (10k$+ MRR)",
+   "source": "https://www.betterlaunch.co/blog/indie-hacker",
+   "grade": "C"
+  },
+  {
+   "pop": "Indie hacker, auto-déclaré public (n=65, biais fort)",
+   "pct": "P50",
+   "valeur": 13800,
+   "unite": "€/mois (15k$)",
+   "source": "https://provenstartups.com/blog/solo-founders/indie-hacker-revenue",
+   "grade": "C"
+  }
+ ],
+ "multiples": [
+  {
+   "segment": "SaaS, deals <1M$",
+   "type": "profit (net income)",
+   "x": 3.9,
+   "note": "Acquire.com 2025",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "segment": "SaaS, deals <100k$",
+   "type": "profit",
+   "x": 3.7,
+   "note": "Acquire.com 2025",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "segment": "SaaS, jours moyens sur le marché",
+   "type": "jours",
+   "x": 81,
+   "note": "Acquire.com",
+   "source": "https://invisibleexit.com/data/micro-saas-exit-multiples",
+   "grade": "C"
+  },
+  {
+   "segment": "Micro-SaaS <500k$ ARR",
+   "type": "revenu",
+   "x": 2.8,
+   "note": "FE International 2025 via tiers",
+   "source": "https://invisibleexit.com/data/micro-saas-exit-multiples",
+   "grade": "C"
+  },
+  {
+   "segment": "SaaS 500k-2M$ ARR",
+   "type": "revenu",
+   "x": 3.6,
+   "note": "FE International 2025 via tiers",
+   "source": "https://invisibleexit.com/data/micro-saas-exit-multiples",
+   "grade": "C"
+  },
+  {
+   "segment": "SaaS coté, 2024",
+   "type": "revenu",
+   "x": 7.0,
+   "note": "Acquire.com report",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "segment": "SaaS coté, 2025",
+   "type": "revenu",
+   "x": 5.5,
+   "note": "Acquire.com report",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  }
+ ],
+ "marche": [
+  {
+   "indicateur": "Agents IA standalone (Grand View)",
+   "annee": 2026,
+   "valeur": 10.9,
+   "unite": "mds USD",
+   "source": "https://www.raftlabs.com/blog/ai-agents-statistics",
+   "grade": "C"
+  },
+  {
+   "indicateur": "Agents IA standalone (Grand View)",
+   "annee": 2030,
+   "valeur": 50.31,
+   "unite": "mds USD, CAGR 45,8%",
+   "source": "https://www.raftlabs.com/blog/ai-agents-statistics",
+   "grade": "C"
+  },
+  {
+   "indicateur": "Agentic AI (Precedence)",
+   "annee": 2025,
+   "valeur": 7.55,
+   "unite": "mds USD",
+   "source": "https://softwarestrategiesblog.com/2026/02/26/roundup-of-agentic-ai-forecasts-and-market-estimates-2026/",
+   "grade": "C"
+  },
+  {
+   "indicateur": "Agentic AI (Precedence)",
+   "annee": 2026,
+   "valeur": 10.86,
+   "unite": "mds USD",
+   "source": "https://softwarestrategiesblog.com/2026/02/26/roundup-of-agentic-ai-forecasts-and-market-estimates-2026/",
+   "grade": "C"
+  },
+  {
+   "indicateur": "Dépense agentique embarquée (Gartner, via tiers)",
+   "annee": 2026,
+   "valeur": 201.9,
+   "unite": "mds USD, +141% YoY",
+   "source": "https://softwarestrategiesblog.com/2026/02/26/roundup-of-agentic-ai-forecasts-and-market-estimates-2026/",
+   "grade": "C"
+  },
+  {
+   "indicateur": "Apps entreprise embarquant des agents (Gartner)",
+   "annee": 2025,
+   "valeur": 5,
+   "unite": "% (<5%)",
+   "source": "https://www.uctoday.com/unified-communications/gartner-predicts-40-of-enterprise-apps-will-feature-ai-agents-by-2026/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "Apps entreprise embarquant des agents (Gartner)",
+   "annee": 2026,
+   "valeur": 40,
+   "unite": "%",
+   "source": "https://www.uctoday.com/unified-communications/gartner-predicts-40-of-enterprise-apps-will-feature-ai-agents-by-2026/",
+   "grade": "B"
+  },
+  {
+   "indicateur": "Service client = part du marché agentique",
+   "annee": 2026,
+   "valeur": 23.1,
+   "unite": "%",
+   "source": "https://www.raftlabs.com/blog/ai-agents-statistics",
+   "grade": "C"
+  }
+ ],
+ "rfs": [
+  {
+   "edition": "Winter 2027",
+   "demande": "Startups in a World of Abundant Space Access",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "The $15-an-Hour Expert",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "Robots Made in America",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "LLMs That Write Well",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "Plaid for Government Benefits",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "Wall Street for the Physical Buildout",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "Vertical Foundation Models",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "AI for City Hall",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "Data Center Supply Chain",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "AI for the Air-Gapped Economy",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  },
+  {
+   "edition": "Winter 2027",
+   "demande": "Own Your Intelligence",
+   "source": "https://www.ycombinator.com/rfs",
+   "grade": "A"
+  }
+ ],
+ "aides": [
+  {
+   "dispositif": "Bourse French Tech (Bpifrance)",
+   "min": 30000,
+   "max": 50000,
+   "conditions": "70% des dépenses éligibles, société <1 an, plafond discordant selon sources",
+   "source": "https://hayot-expertise.fr/blog/bourse-french-tech-bpifrance-conditions",
+   "grade": "B"
+  },
+  {
+   "dispositif": "Bourse French Tech Émergence (deeptech)",
+   "min": 45000,
+   "max": 90000,
+   "conditions": "nécessite un organisme de transfert techno",
+   "source": "https://subventions.fr/insights/bourse-french-tech-guide/",
+   "grade": "C"
+  },
+  {
+   "dispositif": "French Tech Tremplin (incubation)",
+   "min": 22900,
+   "max": 22900,
+   "conditions": "fixe, 12 mois d'accompagnement obligatoire, appel jan-mars 2026",
+   "source": "https://subventions.fr/insights/french-tech-tremplin-guide/",
+   "grade": "C"
+  }
+ ],
+ "modeles": [
+  {
+   "modele": "Freelance / consulting",
+   "famille": "Vente d'heures",
+   "decouplage": 0,
+   "capital": 500,
+   "mois": 1,
+   "marge": 90,
+   "plafond": 300000.0,
+   "p3k": 0.55,
+   "plicorne": 0.0,
+   "saturation": 7,
+   "commentaire": "Référence : 0 découplage. Médiane micro-entrepreneur FR = 330 €/mois net."
+  },
+  {
+   "modele": "Agence productisée (offre packagée, équipe)",
+   "famille": "Vente d'heures",
+   "decouplage": 4,
+   "capital": 5000,
+   "mois": 3,
+   "marge": 50,
+   "plafond": 10000000.0,
+   "p3k": 0.45,
+   "plicorne": 0.0,
+   "saturation": 6,
+   "commentaire": "Découplage partiel : tu vends les heures des autres. Plafond bas, mais cash-flow rapide finançant un produit."
+  },
+  {
+   "modele": "Micro-SaaS B2B (niche)",
+   "famille": "Produit digital",
+   "decouplage": 7,
+   "capital": 3000,
+   "mois": 6,
+   "marge": 72,
+   "plafond": 20000000.0,
+   "p3k": 0.25,
+   "plicorne": 0.0005,
+   "saturation": 8,
+   "commentaire": "Marge KeyBanc 71-74%. 28% des SaaS indé <1k$ MRR. Sortie 3,9x profit sur Acquire."
+  },
+  {
+   "modele": "SaaS vertical IA-native (agents métier)",
+   "famille": "Produit digital",
+   "decouplage": 7,
+   "capital": 10000,
+   "mois": 6,
+   "marge": 60,
+   "plafond": 1000000000.0,
+   "p3k": 0.2,
+   "plicorne": 0.01,
+   "saturation": 7,
+   "commentaire": "Top décile solo Atlas 2x plus souvent AI-native. Marge rognée par le coût d'inférence. 40% des projets agentiques à risque d'abandon (Gartner)."
+  },
+  {
+   "modele": "Dev tools / API (usage-based)",
+   "famille": "Produit digital",
+   "decouplage": 8,
+   "capital": 10000,
+   "mois": 8,
+   "marge": 70,
+   "plafond": 1000000000.0,
+   "p3k": 0.15,
+   "plicorne": 0.01,
+   "saturation": 6,
+   "commentaire": "Lovable, ElevenLabs : 100M$ ARR avec ~50 personnes. Mais nécessite compétence technique forte et distribution développeurs."
+  },
+  {
+   "modele": "Newsletter / média payant",
+   "famille": "Produit digital",
+   "decouplage": 6,
+   "capital": 500,
+   "mois": 4,
+   "marge": 85,
+   "plafond": 50000000.0,
+   "p3k": 0.15,
+   "plicorne": 0.0,
+   "saturation": 8,
+   "commentaire": "Conversion gratuit→payant médiane 0,62% (beehiiv). 10 $/mois standard. Revenu créateurs beehiiv 19M$ en 2025 (+138%)."
+  },
+  {
+   "modele": "Infoproduit / formation en ligne",
+   "famille": "Produit digital",
+   "decouplage": 7,
+   "capital": 1000,
+   "mois": 3,
+   "marge": 90,
+   "plafond": 50000000.0,
+   "p3k": 0.2,
+   "plicorne": 0.0,
+   "saturation": 9,
+   "commentaire": "Marge très haute, saturation maximale, dépend d'une audience existante. Pas de licorne."
+  },
+  {
+   "modele": "Communauté payante / membership",
+   "famille": "Produit digital",
+   "decouplage": 5,
+   "capital": 1000,
+   "mois": 4,
+   "marge": 85,
+   "plafond": 30000000.0,
+   "p3k": 0.15,
+   "plicorne": 0.0,
+   "saturation": 7,
+   "commentaire": "Churn élevé, exige animation continue (découplage moyen)."
+  },
+  {
+   "modele": "App mobile consumer",
+   "famille": "Produit digital",
+   "decouplage": 8,
+   "capital": 5000,
+   "mois": 8,
+   "marge": 70,
+   "plafond": 1000000000.0,
+   "p3k": 0.08,
+   "plicorne": 0.005,
+   "saturation": 9,
+   "commentaire": "Distribution = loterie des stores. Peu de solos y arrivent, mais plafond réel."
+  },
+  {
+   "modele": "Marketplace (offre/demande)",
+   "famille": "Produit digital",
+   "decouplage": 8,
+   "capital": 20000,
+   "mois": 12,
+   "marge": 45,
+   "plafond": 10000000000.0,
+   "p3k": 0.07,
+   "plicorne": 0.02,
+   "saturation": 6,
+   "commentaire": "Marge 30-45% early, 50-65% scale (Bessemer, non vérifié). Problème de l'oeuf et la poule, capital VC presque obligatoire."
+  },
+  {
+   "modele": "E-commerce DTC / marque",
+   "famille": "Produit physique",
+   "decouplage": 5,
+   "capital": 15000,
+   "mois": 4,
+   "marge": 40,
+   "plafond": 500000000.0,
+   "p3k": 0.15,
+   "plicorne": 0.002,
+   "saturation": 9,
+   "commentaire": "Marge brute faible, logistique, pub payante : découplage réel mais capital-intensif."
+  },
+  {
+   "modele": "Rachat de micro-SaaS existant (buy & grow)",
+   "famille": "Acquisition",
+   "decouplage": 7,
+   "capital": 30000,
+   "mois": 1,
+   "marge": 72,
+   "plafond": 20000000.0,
+   "p3k": 0.35,
+   "plicorne": 0.0,
+   "saturation": 5,
+   "commentaire": "3,7-3,9x profit sur Acquire : 30k€ achète ~8k€/an de profit. Revenu immédiat, risque de code hérité."
+  },
+  {
+   "modele": "Licensing / templates / plugins",
+   "famille": "Produit digital",
+   "decouplage": 8,
+   "capital": 500,
+   "mois": 2,
+   "marge": 90,
+   "plafond": 10000000.0,
+   "p3k": 0.2,
+   "plicorne": 0.0,
+   "saturation": 8,
+   "commentaire": "Découplage fort, plafond très bas, dépend des plateformes hôtes."
+  },
+  {
+   "modele": "Deeptech / IA frontier VC-backed",
+   "famille": "VC / licorne",
+   "decouplage": 3,
+   "capital": 500000,
+   "mois": 24,
+   "marge": 60,
+   "plafond": 100000000000.0,
+   "p3k": 0.05,
+   "plicorne": 0.01,
+   "saturation": 4,
+   "commentaire": "Seule voie crédible vers la licorne. Ownership médian 16% à la Series C. 7 ans médian (3,4 ans IA). 75% ne rendent pas le cash."
+  }
+ ],
+ "secteurs_cbi": [
+  {
+   "secteur": "Enterprise Tech",
+   "n": 481,
+   "val": 3843.7,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "secteur": "Financial Services",
+   "n": 210,
+   "val": 846.0,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "secteur": "Industrials",
+   "n": 196,
+   "val": 616.0,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "secteur": "Consumer & Retail",
+   "n": 192,
+   "val": 574.1,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "secteur": "Healthcare & Life Sciences",
+   "n": 120,
+   "val": 309.8,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "secteur": "Media & Entertainment",
+   "n": 74,
+   "val": 715.5,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  },
+  {
+   "secteur": "Insurance",
+   "n": 20,
+   "val": 42.4,
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  }
+ ],
+ "annee_entree_cbi": [
+  {
+   "annee": 2012,
+   "n": 3
+  },
+  {
+   "annee": 2013,
+   "n": 2
+  },
+  {
+   "annee": 2014,
+   "n": 9
+  },
+  {
+   "annee": 2015,
+   "n": 31
+  },
+  {
+   "annee": 2016,
+   "n": 15
+  },
+  {
+   "annee": 2017,
+   "n": 28
+  },
+  {
+   "annee": 2018,
+   "n": 68
+  },
+  {
+   "annee": 2019,
+   "n": 82
+  },
+  {
+   "annee": 2020,
+   "n": 84
+  },
+  {
+   "annee": 2021,
+   "n": 422
+  },
+  {
+   "annee": 2022,
+   "n": 229
+  },
+  {
+   "annee": 2023,
+   "n": 58
+  },
+  {
+   "annee": 2024,
+   "n": 77
+  },
+  {
+   "annee": 2025,
+   "n": 113
+  },
+  {
+   "annee": 2026,
+   "n": 94
+  }
+ ],
+ "pays_primaire": [
+  {
+   "pays": "États-Unis",
+   "cbi": 754,
+   "pitchbook": 910,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Chine",
+   "cbi": 153,
+   "pitchbook": 354,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Royaume-Uni",
+   "cbi": 62,
+   "pitchbook": 57,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Inde",
+   "cbi": 58,
+   "pitchbook": 60,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Allemagne",
+   "cbi": 36,
+   "pitchbook": 29,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "France",
+   "cbi": 30,
+   "pitchbook": 30,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Israël",
+   "cbi": 24,
+   "pitchbook": 27,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Canada",
+   "cbi": 22,
+   "pitchbook": 23,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Brésil",
+   "cbi": 20,
+   "pitchbook": null,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Singapour",
+   "cbi": 15,
+   "pitchbook": 27,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Corée du Sud",
+   "cbi": 15,
+   "pitchbook": 18,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "pays": "Pays-Bas",
+   "cbi": 12,
+   "pitchbook": null,
+   "src1": "https://www.cbinsights.com/research-unicorn-companies",
+   "src2": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  }
+ ],
+ "france_cbi": [
+  {
+   "societe": "Mistral AI",
+   "val": 24.38,
+   "date": "12/10/2023",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Doctolib",
+   "val": 6.4,
+   "date": "3/19/2019",
+   "secteur": "Healthcare & Life Sciences"
+  },
+  {
+   "societe": "Alan",
+   "val": 6.26,
+   "date": "4/19/2021",
+   "secteur": "Healthcare & Life Sciences"
+  },
+  {
+   "societe": "Back Market",
+   "val": 5.7,
+   "date": "5/18/2021",
+   "secteur": "Consumer & Retail"
+  },
+  {
+   "societe": "ContentSquare",
+   "val": 5.6,
+   "date": "5/25/2021",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Qonto",
+   "val": 5.0,
+   "date": "1/11/2022",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "AMI Labs",
+   "val": 4.53,
+   "date": "3/10/2026",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Hugging Face",
+   "val": 4.5,
+   "date": "5/9/2022",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Sorare",
+   "val": 4.3,
+   "date": "9/21/2021",
+   "secteur": "Media & Entertainment"
+  },
+  {
+   "societe": "Pennylane",
+   "val": 4.08,
+   "date": "2/8/2024",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "ManoMano",
+   "val": 2.6,
+   "date": "7/5/2021",
+   "secteur": "Consumer & Retail"
+  },
+  {
+   "societe": "Voodoo",
+   "val": 2.31,
+   "date": "8/17/2020",
+   "secteur": "Media & Entertainment"
+  },
+  {
+   "societe": "BlaBlaCar",
+   "val": 2.0,
+   "date": "9/16/2015",
+   "secteur": "Consumer & Retail"
+  },
+  {
+   "societe": "Exotec",
+   "val": 2.0,
+   "date": "1/17/2022",
+   "secteur": "Industrials"
+  },
+  {
+   "societe": "Ankorstore",
+   "val": 1.98,
+   "date": "1/10/2022",
+   "secteur": "Consumer & Retail"
+  },
+  {
+   "societe": "Spendesk",
+   "val": 1.5,
+   "date": "1/18/2022",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Ledger",
+   "val": 1.47,
+   "date": "6/10/2021",
+   "secteur": "Financial Services"
+  },
+  {
+   "societe": "Harmattan AI",
+   "val": 1.4,
+   "date": "1/12/2026",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Veepee",
+   "val": 1.38,
+   "date": "7/2/2007",
+   "secteur": "Consumer & Retail"
+  },
+  {
+   "societe": "Vestiaire Collective",
+   "val": 1.18,
+   "date": "3/1/2021",
+   "secteur": "Consumer & Retail"
+  },
+  {
+   "societe": "OVH",
+   "val": 1.1,
+   "date": "8/15/2016",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Zama",
+   "val": 1.0,
+   "date": "6/25/2025",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Pigment",
+   "val": 1.0,
+   "date": "04/03/2024",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "EcoVadis",
+   "val": 1.0,
+   "date": "6/14/2022",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Ynsect",
+   "val": 1.0,
+   "date": "2/21/2019",
+   "secteur": "Industrials"
+  },
+  {
+   "societe": "Meero",
+   "val": 1.0,
+   "date": "6/18/2019",
+   "secteur": "Media & Entertainment"
+  },
+  {
+   "societe": "Shift",
+   "val": 1.0,
+   "date": "5/6/2021",
+   "secteur": "Insurance"
+  },
+  {
+   "societe": "Swile",
+   "val": 1.0,
+   "date": "10/11/2021",
+   "secteur": "Enterprise Tech"
+  },
+  {
+   "societe": "Dental Monitoring",
+   "val": 1.0,
+   "date": "10/21/2021",
+   "secteur": "Healthcare & Life Sciences"
+  },
+  {
+   "societe": "Lydia",
+   "val": 1.0,
+   "date": "12/8/2021",
+   "secteur": "Financial Services"
+  }
+ ],
+ "verticals_pb": [
+  {
+   "vertical": "SaaS",
+   "n": 914,
+   "val": 5600
+  },
+  {
+   "vertical": "AI & ML",
+   "n": 761,
+   "val": 4900
+  },
+  {
+   "vertical": "Fintech",
+   "n": 422,
+   "val": 2000
+  },
+  {
+   "vertical": "Mobility tech",
+   "n": 162,
+   "val": 915
+  },
+  {
+   "vertical": "Cloudtech & DevOps",
+   "n": 148,
+   "val": 637
+  },
+  {
+   "vertical": "Clean tech",
+   "n": 143,
+   "val": 447
+  },
+  {
+   "vertical": "Climate tech",
+   "n": 130,
+   "val": 411
+  },
+  {
+   "vertical": "Space tech",
+   "n": 27,
+   "val": 1300
+  }
+ ],
+ "pitchbook": [
+  {
+   "indicateur": "Licornes actives (31 mars 2026)",
+   "valeur": 1680,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Valorisation agrégée (mds USD)",
+   "valeur": 8600,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Nouvelles licornes 2024",
+   "valeur": 132,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Nouvelles licornes 2025",
+   "valeur": 197,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Nouvelles licornes Q1 2026",
+   "valeur": 95,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part IA par nombre (%)",
+   "valeur": 37,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part IA par valeur (%)",
+   "valeur": 47.6,
+   "note": "vs 9,7% en 2016",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Licornes dormantes (pas de tour depuis >2 ans)",
+   "valeur": 844,
+   "note": "51,2% de l'univers",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Licornes déchues (failures déclarées)",
+   "valeur": 175,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Délai médian création → sortie, Q1 2026 (années)",
+   "valeur": 7.4,
+   "note": "record 9,2 en 2025",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Seed médian d'une société sur trajectoire licorne, Q1 2026 (M USD)",
+   "valeur": 20,
+   "note": "7,5 un an plus tôt",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part des 10 premières dans la valorisation totale (%)",
+   "valeur": 41.3,
+   "note": "niveau 2016",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Efficacité capital SpaceX (valo / capital levé)",
+   "valeur": 128.7,
+   "note": "x",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Efficacité capital OpenAI",
+   "valeur": 4.7,
+   "note": "x",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "RVVC médian 2021 (valeur créée / $ investi)",
+   "valeur": 1.75,
+   "note": "",
+   "source": "https://pitchbook.brightspotcdn.com/b0/04/9f6348114a9eac1042ce298e72f7/q1-2026-global-unicorn-tracker.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Licornes 2021 (année de pic) sur CB Insights",
+   "valeur": 422,
+   "note": "sur 1 316 parsées : 32%",
+   "source": "https://www.cbinsights.com/research-unicorn-companies",
+   "grade": "A"
+  }
+ ],
+ "acquire": [
+  {
+   "indicateur": "Multiple revenu SaaS coté (Acquire macro)",
+   "annee": 2022,
+   "valeur": 17,
+   "unite": "x revenu",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Multiple revenu SaaS coté",
+   "annee": 2023,
+   "valeur": 7,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Multiple revenu SaaS coté",
+   "annee": 2024,
+   "valeur": 7,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Multiple revenu SaaS coté",
+   "annee": 2025,
+   "valeur": 5.5,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Prix confirmé / résultat net, deals <100k$",
+   "annee": 2025,
+   "valeur": 3.7,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Prix confirmé / résultat net, deals 100k-1M$",
+   "annee": 2025,
+   "valeur": 3.9,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Multiple résultat net SaaS confirmé (n=145)",
+   "annee": 2023,
+   "valeur": 4.3,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Multiple résultat net SaaS confirmé (n=205)",
+   "annee": 2024,
+   "valeur": 3.9,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Multiple résultat net SaaS confirmé (n=129)",
+   "annee": 2025,
+   "valeur": 3.9,
+   "unite": "x",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Jours médians sur le marché (n=136)",
+   "annee": 2025,
+   "valeur": 90,
+   "unite": "jours",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Jours moyens sur le marché (n=185)",
+   "annee": 2025,
+   "valeur": 81,
+   "unite": "jours",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Marge nette moyenne des SaaS profitables publiés",
+   "annee": 2023,
+   "valeur": 67,
+   "unite": "%",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Marge nette moyenne des SaaS profitables publiés",
+   "annee": 2024,
+   "valeur": 71,
+   "unite": "%",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Marge nette moyenne des SaaS profitables publiés",
+   "annee": 2025,
+   "valeur": 71,
+   "unite": "%",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Intérêt acheteurs sérieux si prix = +10% vs juste valeur",
+   "annee": 2025,
+   "valeur": 2,
+   "unite": "%",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Intérêt si prix = juste valeur",
+   "annee": 2025,
+   "valeur": 60,
+   "unite": "%",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Intérêt si prix = -10%",
+   "annee": 2025,
+   "valeur": 92,
+   "unite": "%",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Acheteurs enregistrés",
+   "annee": 2025,
+   "valeur": 600000,
+   "unite": "",
+   "source": "https://blog.acquire.com/wp-content/uploads/2026/02/Acquire-Multiples-Report-2025.pdf",
+   "grade": "A"
+  }
+ ],
+ "beehiiv": [
+  {
+   "indicateur": "Revenu abonnements créateurs beehiiv 2025 (M USD)",
+   "valeur": 19,
+   "note": "+138% vs 2024 (8 M$)",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Projection 2026 (M USD)",
+   "valeur": 35,
+   "note": "",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Conversion gratuit→payant médiane (%)",
+   "valeur": 0.62,
+   "note": "≈6 payants pour 1 000 abonnés",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Conversion top 10% finance/investing (%)",
+   "valeur": 19,
+   "note": "18-20%",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Prix médian mensuel (USD)",
+   "valeur": 10,
+   "note": "annuel 100",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Prix médian investing (USD/mois)",
+   "valeur": 27,
+   "note": "travel 7",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Revenu annuel médian, newsletter investing 1 000 abonnés (USD)",
+   "valeur": 2700,
+   "note": "",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Revenu annuel médian, newsletter travel 1 000 abonnés (USD)",
+   "valeur": 252,
+   "note": "",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Churn mensuel min (Food & Drink, %)",
+   "valeur": 5.06,
+   "note": "≈54% survivent 12 mois",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Churn mensuel max (Money, %)",
+   "valeur": 16.67,
+   "note": "≈11% survivent 12 mois",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Jours médians avant lancement du palier payant",
+   "valeur": 45,
+   "note": "",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  },
+  {
+   "indicateur": "Part des utilisateurs générant du revenu via abonnements, Q1 2026 (%)",
+   "valeur": 30,
+   "note": "15% en Q1 2024",
+   "source": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+   "grade": "A"
+  }
+ ]
+}
