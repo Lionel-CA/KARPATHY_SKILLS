@@ -55,3 +55,16 @@ Les réponses à ces sept questions ne sont dans aucune base de données :
 ## Régénérer
 
 Les CSV et le JSON sont produits par un script Python sans dépendance externe. La page HTML embarque le JSON ; après modification des données, réinjecter le bundle dans `viz/artifact.html` et régénérer `viz/index.html`.
+
+## Profil renseigné (11 nov. 2026)
+
+| Donnée | Valeur |
+|---|---|
+| Métier | GTB (gestion technique du bâtiment) |
+| Statut | Salarié |
+| Capital mobilisable | 30 k€ |
+| Code | Comprend, ne développe pas |
+| Objectif | 10 k€/mois de revenu produit |
+| Heures/semaine disponibles | Non renseigné |
+
+Données marché GTB France : `data/gtb_marche_france.csv`.
