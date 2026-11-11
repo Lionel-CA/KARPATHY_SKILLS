@@ -1,0 +1,9 @@
+acteur,pays,offre,plateformes,prix_public,auto_binding_points,source,grade_fiabilite
+QA Graphics,États-Unis,"Bibliothèque de symboles BAS v5 + service clé en main (vues, plans, navigation, mapping des points) via VPN ou backup de station","Niagara N4, EcoStruxure, Trane, autres",non publié,"mapping manuel inclus dans le service",https://www.qagraphics.com/system-graphics/,B
+One Sight Solutions (ossGraphicsLibrary),Royaume-Uni,"1 857 SVG, 125+ gabarits dont circuits LTHW et arrangements de CTA",Niagara 4,non publié,non,https://onesight.solutions/ossgraphicslibrary-svgs-for-niagara-4-bms/,B
+Niagara UI,inconnu,"Packs de graphiques, dashboards et gabarits PX en glisser-déposer",Niagara,non publié,non,https://www.niagaraui.com/,C
+BASGFX,inconnu,"Bibliothèques configurables : hydraulique, UTA/CTA, extraction",multi,non publié,non,https://www.basgfx.com/,C
+iSMA Controlli,Pologne,"Images 3D et gabarits AHU/RTU/VAV/FCU",MAC36NL uniquement,inclus matériel,non,https://www.ismacontrolli.com/en/isma-graphics.html,B
+Schneider Exchange (TechiesEC),international,"Bibliothèque Premium 3D pour EcoStruxure Building Operation",EBO,non vérifié,non,https://shop.exchange.se.com/en-US/apps/52178/premium-graphics-library-for-any-ecostruxure-edge-control-software,B
+bmsOS,inconnu,"IA : première passe de métrés, listes de points, programmes et graphiques Niagara déployés avec les points","Niagara",non publié,"revendiqué, mécanisme non décrit",https://bmsos.com/,C
+Offre francophone identifiée,France,aucune trouvée (Desigo CC, Wago, Sauter, Distech, conventions françaises),,,,recherche du 11/11/2026,E

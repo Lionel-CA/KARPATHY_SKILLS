@@ -7,7 +7,7 @@ Rédigé le 11 novembre 2026. Budget engagé sur 90 jours : 1 500 € maximum. H
 | # | Hypothèse | Test | Seuil d'abandon |
 |---|---|---|---|
 | H1 | Les intégrateurs manquent de techniciens formés à la mise en service et paieraient pour une formation courte, concrète, par marque | 15 appels de 20 min à des chefs de projet / gérants d'intégrateurs | Moins de 5 sur 15 disent « j'enverrais quelqu'un et je paierais » |
-| H2 | Un livrable de recette standardisé (liste de points, cahier de tests, DOE) fait gagner des heures facturables et se vend | Proposer le livrable sur 3 chantiers réels, payé ou troqué contre un témoignage | 0 chantier accepté en 45 jours |
+| H2 | La création d'imagerie (CTA, réseaux hydrauliques) et la dynamisation des points coûtent aux intégrateurs des dizaines d'heures par chantier, et ils paieraient pour une bibliothèque + une méthode de binding qui divise ce temps par 3 | Chronométrer tes 3 prochains chantiers (heures par vue, par point). Proposer à 3 intégrateurs de dynamiser une CTA complète à prix fixe | 0 intégrateur preneur en 45 jours, ou gain de temps mesuré < 2× |
 | H3 | Les exploitants qui reçoivent une GTB neuve ne savent pas l'utiliser et paieraient un audit de prise en main | 10 appels à des responsables techniques / facility managers | Moins de 3 sur 10 acceptent un rendez-vous |
 
 ## Calendrier
@@ -16,7 +16,7 @@ Rédigé le 11 novembre 2026. Budget engagé sur 90 jours : 1 500 € maximum. H
 |---|---|---|---|---|
 | 1-2 | 20 | Lire le contrat de travail (exclusivité, PI, non-concurrence). Lister 40 contacts : intégrateurs, chefs de projet, exploitants, fabricants. Ouvrir une micro-entreprise. | Liste de contacts, statut créé | 0 € |
 | 3-6 | 40 | 25 appels de découverte (H1, H3). Poser trois questions : quelle tâche vous coûte le plus d'heures non facturées, qu'avez-vous déjà payé pour la régler, combien. Noter mot pour mot. | Grille des 25 réponses | 0 € |
-| 5-8 | 30 | Construire le livrable de recette (H2) à partir de tes propres chantiers : trame de liste de points, cahier de tests, check-list de mise en service par marque. Le proposer sur 3 chantiers. | Trame v1, 3 retours terrain | 0 € |
+| 5-8 | 30 | Redessiner de zéro, hors du temps et des outils de l'employeur, une bibliothèque v1 : 1 CTA type, 1 réseau hydraulique type, convention de nommage des points, procédure de binding. Chronométrer avant/après sur un chantier réel. | Bibliothèque v1 sur ta plateforme, mesure du temps gagné | 0-300 € (licence perso du logiciel si nécessaire) |
 | 7-10 | 25 | Publier chaque semaine un retour terrain sur LinkedIn (dérive classique, erreur de paramétrage, piège BACnet). Objectif : 300 abonnés qualifiés. | 10 publications, liste e-mail | 0-200 € |
 | 11-13 | 15 | Décision : la seule hypothèse survivante devient le produit. Vendre une première version à 3 clients avant de construire davantage. | 3 paiements encaissés ou arrêt | 0-1 300 € |
 
@@ -33,5 +33,7 @@ Il ne construit aucun logiciel, ne dépense pas les 30 k€, ne demande pas de d
 | Voie | Unité | Volume mensuel nécessaire | Heures du fondateur à ce volume | Remarque |
 |---|---|---|---|---|
 | Formation mise en service GTB (par marque, 2 jours, OPCO) | 1 800 € / stagiaire | 6 stagiaires | 4 jours d'animation, puis enregistrée | Qualiopi obligatoire pour les fonds OPCO : à vérifier, 3 à 6 mois de dossier |
-| Trames, bibliothèques et check-lists de recette vendues aux intégrateurs | 150 € / mois / intégrateur | 70 intégrateurs abonnés | Quasi nulles | Marché français étroit : viser Belgique, Suisse, Québec dès le départ |
+| Bibliothèque d'imagerie + méthode de dynamisation, licence par intégrateur | 150 € / mois / intégrateur ou 1 500 € / an | 70 intégrateurs abonnés | Quasi nulles | Concurrence anglophone existante (QA Graphics, ossGraphicsLibrary, Niagara UI) ; vide identifié en francophone et hors Niagara. Voir `data/gtb_imagerie_concurrence.csv` |
+| Service de dynamisation à prix fixe par vue (sous-traité à des dessinateurs formés) | 300 € / vue | 35 vues | 20 h de contrôle qualité | Agence productisée : cash rapide, découplage partiel, c'est QA Graphics en français |
+| Outil de génération + auto-binding depuis la liste de points | 200 € / mois / intégrateur | 50 abonnés | Quasi nulles | Nécessite un développeur. Personne ne le fait proprement en francophone ; bmsOS le revendique en Niagara |
 | Audit de prise en main GTB pour exploitants | 1 250 € / audit | 8 audits | 60 à 80 h : impossible à 10 h/semaine | Sert de porte d'entrée, pas de destination |
